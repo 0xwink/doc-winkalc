@@ -16,7 +16,7 @@ export default defineConfig({
       {
         text: 'Documentation',
         items: [
-          { text: 'What is this calculator for?', link: '/intro'},
+          { text: 'Introduction', link: '/intro'},
           { text: 'CLI Syntax', link: '/syntax'},
           { text: 'Parsing', link: '/parse'},
 
@@ -26,7 +26,7 @@ export default defineConfig({
         text: 'About',
         items: [
           {text: 'Future Forecast', link: '/future'},
-          {text: 'Acknowledgement', link: '/acknowledgement'},
+          {text: 'Acknowledgement', link: '/thankyou'},
         ]
       },
     ],
