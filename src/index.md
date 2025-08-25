@@ -5,10 +5,10 @@ layout: home
 hero:
   name: "winkalc"
   text: "A toy model for arithmetic computing"
-  tagline: My great project tagline
+  tagline: Bézout's Identity, for integers and polynomials
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: Docs
+      link: /intro
 ---
 

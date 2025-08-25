@@ -10,18 +10,25 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
     ],
 
     sidebar: [
       {
-        text: 'Examples',
+        text: 'Documentation',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' },
-          { text: 'i dont know', link: '/i-dont-know'}
+          { text: 'What is this calculator for?', link: '/intro'},
+          { text: 'CLI Syntax', link: '/syntax'},
+          { text: 'Parsing', link: '/parse'},
+
         ]
-      }
+      },
+      {
+        text: 'About',
+        items: [
+          {text: 'Future Forecast', link: '/future'},
+          {text: 'Acknowledgement', link: '/acknowledgement'},
+        ]
+      },
     ],
 
     socialLinks: [
