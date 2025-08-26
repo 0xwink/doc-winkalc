@@ -25,6 +25,7 @@ export default defineConfig({
       {
         text: 'About',
         items: [
+          { text: 'About winkalc', link: '/about'},
           {text: 'Future Forecast', link: '/future'},
           {text: 'Acknowledgement', link: '/thankyou'},
         ]

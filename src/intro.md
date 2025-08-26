@@ -8,7 +8,7 @@ There are numerous fantastic open-source libraries and CLIs with capability far 
 
 The CLI is an calculator for arithmetic operations on some common algebraic objects. Its primary aim is to compute Bézout's identity for integers, Gaussian integers, polynomials over rationals, and polynomials over a prime finite field. Minor features like adding and multiplying are added along the way. I hope this tiny program can take you through a very brief journey in the world of elementary number theory. 
 
-# What is Bézout's Identity?
+## What is Bézout's Identity?
 Euclid's algorithm, in its plainest form, is about finding the GCD (greatest common divisor) of two integers. In fact, any Euclidean domain (ED) would suffice. That is, an integral domain that you can do Euclidean division within, yielding a quotient and a remainder. 
 
 The most important instances of ED are integers and polynomial rings of a field. According to Bézout's identity, for any two elements `(F, G)` from an ED, there is a triple `(U, V, H)` such that `U * F + V * G = H`, where `H` is the GCD of `F` and `G`. Such a triple is produced explicitly by Euclid's algorithm. 
@@ -19,7 +19,7 @@ In Chinese, Euclid's algorithm is usually called "辗转相除法"，which liter
 
 Fields thus come into play. In this tiny CLI, our concern will fall upon a handful of predominantly common fields, including rational numbers (of course) and finite fields of prime modulus. The latter is simply the ring `Z/pZ`, whose modular arithmetic is extensively studied by Gauss in *Disquisitiones Arithmeticae* over 200 years ago.
 
-# Euclidean Algorithm by Hand is Maddening
+## Euclidean Algorithm by Hand is Maddening
 
 Consider two questions, both rooted in practice.
 
@@ -30,7 +30,7 @@ Consider two questions, both rooted in practice.
 :::
 
 ::: tip Solution to Question 1
-There are two approaches. One is factorisation. If I can write them as a product of primes, the rest of work is simply comparing powers. Bad news is that the complexity of factorisation spirals rapidly. The other is to get their GCD and see if it's 1.
+There are two approaches. One is factorisation. If I can write them as a product of primes, the rest of work is simply to compare powers. Bad news is that the complexity of factorisation spirals rapidly. The other is to get their GCD and see if it's 1.
 :::
 
 ::: tip Solution to Question 2
@@ -41,7 +41,7 @@ Obviously `(x+2)^2` and `(x+3)^3` are coprime. By Bézout's identity, if we mana
 
 This is the algebraic style of doing things. An analytic method involving residues is available and perhaps more feasible by hand. Nevertheless, limitations are conspicuous: it works just for complex numbers, unable to cope with the finite field case. 
 
-You may even use the method of undetermined variants, though that means solving a huge matrix in the end.
+You may even use the method of undetermined variants, though that means solving a huge matrix in the end. See [Wikipedia](https://en.wikipedia.org/wiki/Partial_fraction_decomposition).
 :::
 
 In theory, everything goes smoothly. But to be honest, doing Euclid's algorithm by hand is inefficient. And 

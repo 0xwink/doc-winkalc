@@ -1,4 +1,4 @@
-# Syntax
+# CLI Syntax
 
 ```CLI
 > [:ALG] :OP {:OPERANT1} {:OPERANT2}
@@ -25,7 +25,30 @@ output attached.
 ```
 :::
 
-# `:OP`
+## `:ALG`
+Currently, following algebraic structures are supported, divided into two categories, rings and fields. 
+See the respective page for a detailed description on how commands take effect mathematically in each case. 
+
+**Fields**:
+``` 
+Q, F(p)
+```
+Here, `Q` stands for rationals. `F(p)` is the finite field of `p` elements, in 
+which `p` must be specified as a positive prime number. `F(13)`, `F(19)` are accepted, while `F(10)`, `F(0)`, `F(-7)`, and `F()` are not.
+
+
+**Rings**:
+
+```
+Z, Zi, QPol, FPol(p)
+```
+`Z` stands for integers. `QPol` means polynomials with rational coefficients. `FPol(p)` means 
+polynomial with `F(p)` coefficients. 
+
+`Zi` means Gaussian integers, namely all complex numbers `a+bi` such 
+that `a` and `b` are integers.
+
+## `:OP`
 `:OP` means operations. In some sense, it's the main component of a command. Following are all supported arguments:
 
 ```
@@ -34,15 +57,15 @@ Add, Sub, Mul, Div, Divmod, Bezout
 
 `Add`, `Sub`, `Mul` mean addition (+), subtraction (-), multiplication (*) respectively. They are available for any `:ALG`. 
 
-`Div` only makes sense if `:ALG` is a field. Similarly, `Divmod` and `Bezout` are valid only if `:ALG` is a ring. 
+`Div`, division (/), only makes sense if `:ALG` is a field. If the second operand is zero, it returns a error. 
 
+Similarly, `Divmod` and `Bezout` are valid only if `:ALG` is a ring. `Divmod` evaluates the Euclidean division, 
+outputing a quotient and a remainder. If the second operand is zero, it errs. `Bezout` returns the triple in Bézout's identity.
 
-# `:ALG`
-Currently, following algebraic structures are supported, divided into two categories, rings and fields. 
-See the respective page for a detailed description on how commands take effect mathematically in each case. 
+## `:OPERANT`
 
-Fields:
-``` Z, Q, F(p)```
+`:OPERANT` means numbers that engage in an operation. 
+So far, all operations take exactly two operants. Future features may drop this requirement.
 
-Here, `Z` stands for integers. `Q` stands for rationals. `F(p)` is the finite field of `p` elements, in 
-which `p` must be specified as a positive prime number. `F(13)`, `F(19)` are accepted, while `F(10)`, `F(0)`, `F(-7)`, and `F()` are not.
+Depending on your choice of `:ALG`, the parser uses different strategies to read it. The rules of formatting operants are specified in 
+the [parse](/parse) section.  
