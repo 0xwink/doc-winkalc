@@ -1,6 +1,6 @@
 # CLI Syntax
 
-```CLI
+```
 > [:ALG] :OP {:OPERANT1} {:OPERANT2}
 ```
 
