@@ -1,6 +1,6 @@
 # Introduction
 
-::: warning Warning: Amateur project, work-in-progress.
+::: warning Warning: Educational project, work-in-progress.
 Do not use this CLI in production or serious research. It's still at quite an early stage, and thus is subject to hidden bugs and changes of functionalities. Error reporting is primitive. 
 
 There are numerous fantastic open-source libraries and CLIs with capability far beyond mine, such as [Sage](https://www.sagemath.org/).
@@ -9,7 +9,7 @@ There are numerous fantastic open-source libraries and CLIs with capability far 
 The CLI is an calculator for arithmetic operations on some common algebraic objects. Its primary aim is to compute Bézout's identity for integers, Gaussian integers, polynomials over rationals, and polynomials over a prime finite field. Minor features like adding and multiplying are added along the way. I hope this tiny program can take you through a very brief journey in the world of elementary number theory. 
 
 ## What is Bézout's Identity?
-Euclid's algorithm, in its plainest form, is about finding the GCD (greatest common divisor) of two integers. In fact, any Euclidean domain (ED) would suffice. That is, an integral domain that you can do Euclidean division within, yielding a quotient and a remainder. 
+Euclid's algorithm, in its plainest form, is about finding the greatest common divisor (GCD) of two integers. In fact, any Euclidean domain (ED) would suffice. That is, an integral domain that you can do Euclidean division within, yielding a quotient and a remainder. 
 
 The most important instances of ED are integers and polynomial rings of a field. According to Bézout's identity, for any two elements `(F, G)` from an ED, there is a triple `(U, V, H)` such that `U * F + V * G = H`, where `H` is the GCD of `F` and `G`. Such a triple is produced explicitly by Euclid's algorithm. 
 

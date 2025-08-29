@@ -11,8 +11,8 @@ Worth a try, but I sincerely think there are already plenty of cryptographic and
 
 ## This doc site can be polished
 
-Definitely. More fonts could be added in future. Those webfont stuff, you know, I haven't got time to wrap my 
-head around that.
+Definitely. More fonts could be added in future. I shall spend some time exploring webfont infrastructures like
+Google Font. 
 
 ## Complete covering of Galois fields
 An pleasant fact to know is the uniqueness of finite fields. Finite fields enjoy a more legendary name, Galois fields (GF). 

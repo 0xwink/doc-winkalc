@@ -7,7 +7,7 @@
 ::: tip Remark
 `>` appears automatically at the start of each round of dialogue. Don't type it manually. 
 
-Brackets (`[]` and `{}`) are necessary in order to make the parser work properly. Because we allow whitespaces present inside a formula of `:OPERANT`, the parser cannot tell where to truncate between arguments without brackets' help. 
+Brackets (`[]` and `{}`) are necessary in order to ensure parser works properly. Because we allow whitespaces present inside a formula of `:OPERANT`, the parser cannot tell where to truncate between arguments without brackets' help. 
 
 `:ALG` and `:OP` are not case-sensitive. As to `:OPERANTS`, keep `x` in polynomial and `i` in complex numbers in lowercase, otherwise the parser may throw an error.
 :::
@@ -16,9 +16,10 @@ Brackets (`[]` and `{}`) are necessary in order to make the parser work properly
 Here we omit the outputs. 
 I advise you have a look at the examples section, where host much more instances with 
 output attached.
-```CLI
+```
 > [Z] Add {1} {2}
 > [Q] Div {4/7} {6/13}
+> [F(13)] Sub {0} {2}
 > [QPol] Divmod {9x^2+12x+1} {x+3}
 > [FPol(7)] Bezout {6x^4 + x^3 + 2} {x^5 + 5x^13 + 4}
 > [Zi] Mul {18 + 3i} {7i + 16}
