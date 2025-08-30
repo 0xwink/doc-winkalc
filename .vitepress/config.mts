@@ -8,10 +8,7 @@ export default defineConfig({
   description: "A toy model for arithmetic computing",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: 'Home', link: '/' },
-    ],
-
+    
     sidebar: [
       {
         text: 'Documentation',

@@ -10,5 +10,8 @@ hero:
     - theme: brand
       text: Docs
       link: /intro
+    - theme: alt
+      text: Examples
+      link: /example
 ---
 
