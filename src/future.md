@@ -2,7 +2,7 @@
 
 ## Running this program online?
 
-It's in the plan, but I haven't checked if Vercel supports this dynamic functionality at the free tier. There's 
+It's in the plan, but I haven't checked if Render supports this dynamic functionality at the free tier. There's 
 surely some front-end JS and networking stuff to learn on the way towards it.
 
 ## Organize the APIs into a library

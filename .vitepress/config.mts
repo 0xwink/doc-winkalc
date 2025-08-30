@@ -16,18 +16,18 @@ export default defineConfig({
       {
         text: 'Documentation',
         items: [
-          { text: 'Introduction', link: '/intro'},
-          { text: 'CLI Syntax', link: '/syntax'},
-          { text: 'Parsing', link: '/parse'},
-
+          { text: 'Introduction', link: '/intro' },
+          { text: 'CLI Syntax',   link: '/syntax' },
+          { text: 'Parsing',      link: '/parse' },
+          { text: 'Examples',     link: '/example' },
         ]
       },
       {
         text: 'About',
         items: [
-          { text: 'About winkalc', link: '/about'},
-          {text: 'Future Forecast', link: '/future'},
-          {text: 'Acknowledgement', link: '/thankyou'},
+          { text: 'About winkalc',   link: '/about' },
+          { text: 'Future Forecast', link: '/future' },
+          { text: 'Acknowledgement', link: '/thankyou' },
         ]
       },
     ],

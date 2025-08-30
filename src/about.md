@@ -1,4 +1,4 @@
-# About Winkalc
+# About winkalc
 
 The calculator is part of my personal program for educational purpose, in which I try to simulate a production workflow touching on both front-end and back-end development. This project includes a Rust CLI for some basic algorithm in number theory, a document site based upon the markdown-to-html framework Vitepress, as well as exercising elementary Git, shell script and Render for the sake of deployment. Although the code is no big deal, if not juvenile, I do hope you can learn something if you are a newcomer to these tech-stacks.
 
