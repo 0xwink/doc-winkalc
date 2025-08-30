@@ -6,7 +6,7 @@ Instead, I _advise_ you follow these pattern to format inputs because these are
 stably supported. If an input breaks one of them, for example missing paratheses,
 it would perhaps still get recognised, but the correctness is not guaranteed.
 
-An universal fact is that whitespaces don't affect parsing, since all ascii-spaces
+A universal fact is that whitespaces don't affect parsing, since all ascii-spaces
 are dropped during pre-processing. e.g. `5x + 6` = `5x+6`, `5 / 7` = `5/7`. 
 
 ## Integers `Z`
