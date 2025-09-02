@@ -45,7 +45,7 @@ If the polynomial has a term with coefficient `1`, you may omit the coeff. e.g. 
 
 ::: tip Tip
 Actually, `^` is optional, just as spaces. 
-The parser see no difference in `6x3+7` and `6x^3 + 7`.
+The parser sees no difference in `6x3+7` and `6x^3 + 7`.
 You can use this shortcut to type polynomials swifter. 
 
 Skipping the `^` part sacrifices human readability, which is why outputs always keep their `^` (and sometimes whitespace).
