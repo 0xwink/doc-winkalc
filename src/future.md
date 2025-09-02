@@ -2,7 +2,7 @@
 
 ## Running this program online?
 
-It's in the plan, but I haven't checked if Render supports this dynamic functionality at the free tier. There's 
+It’s in the plan, but I haven’t checked if Render supports this dynamic functionality at the free tier. There’s 
 surely some front-end JS and networking stuff to learn on the way towards it.
 
 ## Organize the APIs into a library
@@ -36,5 +36,5 @@ The family of `GF(2^n)` have proved outstandingly useful in modern cryptographic
 
 There are various computing demands in algebra and number theory, for example, factorisation and elliptic curves. Irreducibility of polynomials has been mentioned. To support these features will be tempting yet challenging, especially if you want to do things neatly.
 
-To be clear, hard-ware optimisations and sandbox security are out of my concern (and capability) when it comes to this education-oriented project, since such improvements often come with artificial shortcuts and obscure ASM code. Therefore, it's not made for production-scale code and won't be -- please consider RustCrypto etc. instead!
+To be clear, hard-ware optimisations and sandbox security are out of my concern (and capability) when it comes to this education-oriented project, since such improvements often come with artificial shortcuts and obscure ASM code. Therefore, it’s not made for production-scale code and won’t be — please consider RustCrypto etc. instead!
 

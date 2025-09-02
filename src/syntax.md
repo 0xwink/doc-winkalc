@@ -14,8 +14,7 @@ Brackets (`[]` and `{}`) are necessary in order to ensure parser works properly.
 
 ::: details Examples
 Here we omit the outputs. 
-I advise you have a look at the examples section, where host much more instances with 
-output attached.
+I advise you have a look at the [examples](/example) section, where host much more instances with output attached.
 ```
 > [Z] Add {1} {2}
 > [Q] Div {4/7} {6/13}

@@ -33,10 +33,7 @@ Q = 3x^2 + 71,
 R = - 11x + (146220/29).
 ```
 
-## Bézout's Identity
-
-As you can see, the complexity of `[QPol] bezout` escalates quickly. It's already a nightmare to compute it by hand when both operands are of degree four. As for degrees higher than six,
-even a modern CPU can be helpless. 
+## Bézout’s Identity
 
 ```
 > [Z] bezout {123801} {44997}
@@ -71,3 +68,6 @@ V = 23+10i,
 G = 628+73i,
 [GCD] H = 1.
 ```
+
+As you can see, the complexity of `[QPol] bezout` escalates quickly. It’s already a nightmare to compute it by hand when both operands are of degree four. As for degrees higher than six,
+even a modern CPU can be helpless. 

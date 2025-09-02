@@ -15,7 +15,7 @@ export default defineConfig({
         items: [
           { text: 'Introduction', link: '/intro' },
           { text: 'CLI Syntax',   link: '/syntax' },
-          { text: 'Parsing',      link: '/parse' },
+          { text: 'Parse',      link: '/parse' },
           { text: 'Examples',     link: '/example' },
         ]
       },

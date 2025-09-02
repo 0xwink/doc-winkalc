@@ -1,12 +1,12 @@
 # Parse
 
-I'm not a expert in formal languages and do not intend to specify every syntax and
-how it's implimented.
+I’m not a expert in formal languages and do not intend to specify every syntax and
+how it’s implimented.
 Instead, I _advise_ you follow these pattern to format inputs because these are
 stably supported. If an input breaks one of them, for example missing paratheses,
 it would perhaps still get recognised, but the correctness is not guaranteed.
 
-A universal fact is that whitespaces don't affect parsing, since all ascii-spaces
+A universal fact is that whitespaces don’t affect parsing, since all ascii-spaces
 are dropped during pre-processing. e.g. `5x + 6` = `5x+6`, `5 / 7` = `5/7`. 
 
 ## Integers `Z`
@@ -15,7 +15,7 @@ Just type it straightforwardly. Examples: `0`, `1`, `35`, `-23`.
 
 ## Gauss Integers `Zi`
 
-Use lowercase `i` for the imaginary unit. No need for parentheses. The order of real and imaginary part makes no difference. It's backward compatible with integer parsing: `21` and `-5` can be read as Gaussian Integers.
+Use lowercase `i` for the imaginary unit. No need for parentheses. The order of real and imaginary part makes no difference. It’s backward compatible with integer parsing: `21` and `-5` can be read as Gaussian Integers.
 
 Examples: `0`, `4+5i`, `-5+i`, `7i-6`.
 
@@ -53,11 +53,11 @@ Skipping the `^` part sacrifices human readability, which is why outputs always 
 
 ## Rational Polynomials `QPol`
 
-Use lowercase `x` for the indetermediate. If a term's coefficient is `1`, omit it, as in `x`, `x^2 + 1`.
+Use lowercase `x` for the indetermediate. If a term’s coefficient is `1`, omit it, as in `x`, `x^2 + 1`.
 
-Let's say a string is a `Pr` (positive rational), if it contains **no sign**, and is either two unsigned ints separated by a slash and wrapped in parentheses (e.g. `(7/6)`, `(3/5)`), or merely an unsigned int (e.g. `4`, `7`).
+Let’s say a string is a `Pr` (positive rational), if it contains **no sign**, and is either two unsigned ints separated by a slash and wrapped in parentheses (e.g. `(7/6)`, `(3/5)`), or merely an unsigned int (e.g. `4`, `7`).
 
-Here is a somewhat abstract format pattern for `QPol`. A `Sgn` means either `+` or `-`. If the first `Sgn` is `+`, you don't have to type it.
+Here is a somewhat abstract format pattern for `QPol`. A `Sgn` means either `+` or `-`. If the first `Sgn` is `+`, you don’t have to type it.
 ```
 <Sgn> <Pr> <Sgn> <Pr> <Sgn> ... <Sgn> <Pr>
 ```
