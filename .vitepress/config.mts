@@ -13,15 +13,16 @@ export default defineConfig({
         text: 'Documentation',
         items: [
           { text: 'Introduction', link: '/intro' },
-          { text: 'CLI Syntax',   link: '/syntax' },
-          { text: 'Parse',      link: '/parse' },
-          { text: 'Examples',     link: '/example' },
+          { text: 'Getting Started', link: '/getting-started' },
+          { text: 'CLI Syntax', link: '/syntax' },
+          { text: 'Parse', link: '/parse' },
+          { text: 'Examples', link: '/example' }
         ]
       },
       {
         text: 'About',
         items: [
-          { text: 'About winkalc',   link: '/about' },
+          { text: 'About winkalc', link: '/about' },
           { text: 'Future Forecast', link: '/future' },
           { text: 'Acknowledgement', link: '/thankyou' },
         ]
@@ -31,6 +32,10 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/0xwink/winkalc' }
     ]
+  },
+  
+  markdown: {
+    math: true
   },
 
   head: [

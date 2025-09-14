@@ -11,22 +11,23 @@ The CLI is an calculator for arithmetic operations on some common algebraic obje
 ## What is Bézout’s Identity?
 Euclid’s algorithm, in its plainest form, is about finding the greatest common divisor (GCD) of two integers. In fact, any Euclidean domain (ED) would suffice. That is, an integral domain that you can do Euclidean division within, yielding a quotient and a remainder. 
 
-The most important instances of ED are integers and polynomial rings of a field. According to Bézout’s identity, for any two elements `(F, G)` from an ED, there is a triple `(U, V, H)` such that `U * F + V * G = H`, where `H` is the GCD of `F` and `G`. Such a triple is produced explicitly by Euclid’s algorithm. 
+The most important instances of ED are integers and polynomial rings of a field. According to Bézout’s identity, for any two elements $(F, G)$ from an ED, there is a triple $(U, V, H)$ such that $U \cdot F + V \cdot G = H$, where $H$ is the GCD of $F$ and $G$. Such a triple is produced explicitly by Euclid’s algorithm. 
 
 ::: tip Do You Know?
 In Chinese, Euclid’s algorithm is usually called “辗转相除法”，which literally means “the algorithm of dividing one by the other back and forth.”
 :::
 
-Fields thus come into play. In this tiny CLI, our concern will fall upon a handful of predominantly common fields, including rational numbers (of course) and finite fields of prime modulus. The latter is simply the ring `Z/pZ`, whose modular arithmetic is extensively studied by Gauss in *Disquisitiones Arithmeticae* over 200 years ago.
+Fields thus come into play. In this tiny CLI, our concern will fall upon a handful of predominantly common fields, including rational numbers (of course) and finite fields of prime modulus. The latter is simply the ring $\mathbb{Z}/p\mathbb{Z}$, whose modular arithmetic is extensively studied by Gauss in *Disquisitiones Arithmeticae* over 200 years ago.
 
 ## Euclidean Algorithm by Hand is Maddening
 
 Consider two questions, both rooted in practice.
 
 ::: info Questions
-1. Determine whether 45499231 and 793338813 are coprime or not.
+1. Determine whether $45499231$ and $793338813$ are coprime or not.
 
-2. Decompose the fraction `H = 1/[(x+2)^2 * (x+3)^3]` into the form `F/[(x+2)^2] + G/[(x+3)^3]`.
+2. Decompose the fraction $H = 1/[(x+2)^2 (x+3)^3]$ into the 
+form $F/(x+2)^2 + G/(x+3)^3$.
 :::
 
 ::: tip Solution to Question 1
@@ -35,9 +36,9 @@ There are two approaches. One is factorisation. If I can write them as a product
 
 ::: tip Solution to Question 2
 This is a microcosm of the famous problem named partial fraction decomposition. If I want to evaluate the 
-integral of `H`, it is vastly helpful to simplify its denominator. 
+integral of $H$, it is vastly helpful to simplify its denominator. 
 
-Obviously `(x+2)^2` and `(x+3)^3` are coprime. By Bézout’s identity, if we manage to find (`U`, `V`) such that `1 = U * (x+2)^2 + V * (x+3)^3` and, hence, a substitute for the numerator, we are done.
+Obviously $(x+2)^2$ and $(x+3)^3$ are coprime. By Bézout’s identity, if we manage to find $(U, V)$ such that $1 = U (x+2)^2 + V (x+3)^3$ and, hence, a substitute for the numerator, we are done.
 
 This is the algebraic style of doing things. An analytic method involving residues is available and perhaps more feasible by hand. Nevertheless, limitations are conspicuous: it works just for complex numbers, unable to cope with the finite field case. 
 

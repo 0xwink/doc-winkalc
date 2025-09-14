@@ -26,8 +26,8 @@ I advise you have a look at the [examples](/example) section, where host much mo
 :::
 
 ## `:ALG`
-Currently, following algebraic structures are supported, divided into two categories, rings and fields. 
-See the respective page for a detailed description on how commands take effect mathematically in each case. 
+Currently, six algebraic structures are supported, divided into two categories, rings and fields. 
+See the [parse](/parse) page for a detailed description on how commands take effect mathematically in each case. 
 
 **Fields**:
 ``` 

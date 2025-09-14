@@ -55,12 +55,26 @@ Skipping the `^` part sacrifices human readability, which is why outputs always 
 
 Use lowercase `x` for the indetermediate. If a term’s coefficient is `1`, omit it, as in `x`, `x^2 + 1`.
 
-Let’s say a string is a `Pr` (positive rational), if it contains **no sign**, and is either two unsigned ints separated by a slash and wrapped in parentheses (e.g. `(7/6)`, `(3/5)`), or merely an unsigned int (e.g. `4`, `7`).
+Conceptually, a string of `QPol` can be broken into one or more monomials `QMon`, and a `QMon` consists of three substrings in order: 
+a sign `Sgn`, then a positive rational `Pr` and finally a power of the indeterminate `Ind`. 
 
-Here is a somewhat abstract format pattern for `QPol`. A `Sgn` means either `+` or `-`. If the first `Sgn` is `+`, you don’t have to type it.
+Formally:
 ```
-<Sgn> <Pr> <Sgn> <Pr> <Sgn> ... <Sgn> <Pr>
+<QPol> = <QMon> <QMon> ... <QMon>
+
+<QMon> = <Sgn> <Pr> <Ind>
 ```
+
+A `Sgn` means either `+` or `-`. 
+
+We say a string is a `Pr`, if it contains **no sign**, and is either two unsigned ints separated by a slash and wrapped in parentheses (e.g. `(7/6)`, `(3/5)`), or merely an unsigned int (e.g. `4`, `7`).
+
+An `Ind` can be ` ` (empty, for the constant term),  `x` (for the first order term), or `x^n` (for the higher term, where `n`
+must be a positive integer, like `x^2`, `x^25`).
+
+::: tip Tip
+If the `Sgn` in the first `QMon` is positive, you don’t have to type it.
+:::
 
 Examples:
 ```
